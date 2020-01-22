@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+第２、３画面レイアウト
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+    第２、３画面タイトル部分のレイアウト
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<Button-->
+        <!--android:id="@+id/btnBack"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:onClick="onBackButtonClick"-->
+        <!--android:text="@string/btn_back"-->
+        <!--android:textSize="20sp" />-->
+
+        <TextView
+            android:id="@+id/tvTitleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="@string/tv_title_edit"
+            android:textSize="25sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btnSave"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:onClick="onSaveButtonClick"-->
+        <!--android:text="@string/btn_save"-->
+        <!--android:textSize="20sp" />-->
+    </FrameLayout>
+    <!--
+    第２、３画面で店名を入力するときのレイアウト
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_input_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etInputName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+    <!--
+    第２、３画面で電話を入力するときのレイアウト
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_input_tel"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etInputTel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:inputType="phone" />
+    </LinearLayout>
+    <!--
+    第２、３画面でURLを入力するときのレイアウト
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_input_url"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etInputUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:inputType="textUri" />
+    </LinearLayout>
+    <!--
+    第２、３画面でメモを入力するときのレイアウト
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tv_input_note"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etInputNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btnDelete"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:background="#FF6666"-->
+    <!--android:onClick="onDeleteButtonClick"-->
+    <!--android:text="@string/btn_delete"-->
+    <!--android:textSize="25sp" />-->
+</LinearLayout>
